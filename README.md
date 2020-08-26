@@ -1,5 +1,5 @@
 # ssq: super simple queue
-simple script to make lsf job array
+super simple script to make your LSF life better
 1. creates LSF job array from job file (one job per line)
 2. sends email notification upon completion
 
