@@ -1,0 +1,2 @@
+# ssq
+super simple queue
