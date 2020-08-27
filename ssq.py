@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 __author__ = "Donghoon Lee"
 __copyright__ = "Copyright 2020"
