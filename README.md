@@ -36,7 +36,6 @@ optional arguments:
 git clone https://github.com/leelaboratory/ssq.git
 
 # (optional)
-chmod +x /path/to/ssq/ssq.py
 echo alias ssq=\"/sc/arion/projects/CommonMind/leed62/app/ssq/ssq.py\" >> ~/.bashrc
 source ~/.bashrc
 ssq -h
@@ -44,5 +43,5 @@ ssq -h
   
 ## example
 ```
-python ssq.py --job-file test_jobfile --job-name test_jobname --project acc_yourprojectname --queue express --walltime 12:00 --max-jobs 20 --core 2 --mem 4G --email youremail@mssm.edu
+ssq --job-file test_jobfile --job-name test_jobname --project acc_yourprojectname --queue express --walltime 12:00 --max-jobs 20 --core 2 --mem 4G --email youremail@mssm.edu
 ```
