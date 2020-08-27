@@ -36,7 +36,7 @@ optional arguments:
 git clone https://github.com/leelaboratory/ssq.git
 
 # (optional)
-echo alias ssq=\"/sc/arion/projects/CommonMind/leed62/app/ssq/ssq.py\" >> ~/.bashrc
+echo alias ssq=\"/path/to/ssq/ssq.py\" >> ~/.bashrc
 source ~/.bashrc
 ssq -h
 ```
