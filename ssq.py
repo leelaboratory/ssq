@@ -10,7 +10,7 @@ __email__ = "donghoon.lee@mssm.edu"
 ### recreation of "dead simple queue" for LSF, inspired by https://github.com/ycrc/dSQ
 
 import argparse
-from subprocess import call, run
+from subprocess import run
 import sys
 import re
 
