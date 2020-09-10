@@ -67,7 +67,7 @@ def main():
     ### email notification
     if args.email:
         job_id_str = re.search('(?<=<).+?(?=>)', out.stdout.decode("utf-8")).group(0)
-        email_cmd = 'bsub -J "%s_email" -P %s -q %s -W 10 -n 1 -o %s_%%J_email.out -w %s "bhist -l %s | mail -s \'[minerva job array] %s %s COMPLETED\' %s"' % (
+        email_cmd = 'bsub -J "%s_email" -P %s -q %s -W 10 -n 1 -o %s_%%J_email.out -w "done(%s)" "bhist -l %s | mail -s \'[minerva job array] %s %s COMPLETED\' %s"' % (
             args.job_name, args.project, args.queue, args.job_name, job_id_str, job_id_str, args.job_name, job_id_str,
             args.email)
         print("submitting:\n    {}".format(email_cmd))
